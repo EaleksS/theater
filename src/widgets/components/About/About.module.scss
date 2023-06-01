@@ -1,0 +1,38 @@
+.about {
+  margin-top: 150px;
+
+  h2 {
+    text-align: center;
+  }
+
+  .items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1.5fr 1fr;
+    }
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      .info {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .img {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
